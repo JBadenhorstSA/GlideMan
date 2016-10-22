@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>GlideMan</title>
+</head>
+
+<body>
+<h1>Glider Charge Options Explanation</h1>
+<p>This is an explanation
+  
+  
+  of the different charging options for gliders and the formula that needs to be entered for each to perform the calculations
+</p>
+<h2>Option 1: </h2>
+<p>Charges the flight according to a normal hourly charge. Takes the flight duration multiplied by the charge per hour</p>
+<h3>FORMULA : HourCharge e.g. 100</h3>
+<br />
+<h2>Option 2: </h2>
+<p>Uses a per minute charge with minimum and maximum per flight charge. If the flight cost is less that the minimum, the minimum charge is applied, if the flight is more than the maximum , the maximum flight charge is applied otherwise the flight cost is calculated on the per minute rate</p>
+<h3>FORMULA : PerMinuteCost-MinCost-MaxCost e.g 5-300-500</h3>
+<br />
+<h2>Option 3: </h2>
+<p>Uses a minimum flight cost and maximum flight cost. There is a minimum cost for each flight and if the flight is longer than a given period of time tha maximum charge is applied. The time period is specified in decimal as a fraction of an hour or decimal as ammount of hours. e.g 30 minutes is specified as 0.5</p>
+<h3>FORMULA : MinCost-MaxCost-TimeSplit e.g 50-100-0.5</h3>
+<br />
+<h2>TMG Option 1 :</h2>
+<p>Only charges for the amount of time the engine was running using the tacho time. It then also adds the cost for each landing given the cost per landing ammount</p>
+<h3>FORMULA : TachoHourCharge-LandingCharge e.g. 650-10</h3>
+<br />
+<h2>TMG Option 2: </h2>
+<p>The same as for Option 1 except that it also charges a rate for the engine off time (Gliding Time)</p>
+<h3>FORMULA : GlidingHourCharge-TachoHourCharge-LandingCharge e.g 150-650-10</h3>
+</body>
+</html>
