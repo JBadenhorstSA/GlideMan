@@ -14,15 +14,6 @@
 	//Using variable like this makes it easy to change information needed to connect to Databases
 	
 	//IDEA!!!! - Have the user enter these fields?
-	//Uncomment this part when connecting to live system
-	/*$user_name = "m9496420";
-	$password = "j6yi7ipc";
-	$database = "CLDBHOST_M9496420";
-	$server = "196.22.172.208";*/
-	//end of variable for the live system
-	
-	
-	//Uncomment this part to connect to local test DB glidemantst for testing
 	$user_name = "root";
 	$password = "";
 	$database = "glideman";
